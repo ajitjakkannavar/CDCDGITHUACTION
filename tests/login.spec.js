@@ -23,3 +23,4 @@ test('OrangeHRM Login Test', async ({ page }) => {
         .toHaveText('Dashboard');
 
 });
+// Updated login automation from login-automation branch
