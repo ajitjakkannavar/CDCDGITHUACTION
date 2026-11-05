@@ -29,6 +29,9 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: npm test
 
       - name: Upload Playwright HTML report
